@@ -1,0 +1,98 @@
+body{
+    font-family: sans-serif;
+    background-color: white;
+}
+.container{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+.container h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px ;
+}
+.container form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+form .textfield{
+    position: relative;
+    margin:30px 0;
+}
+
+.textfield input{
+    
+    width: 80%;
+    height: 40px;
+    padding-left: 10px;
+}
+.textfield p{
+    position: relative;
+    top:50%;
+    left:5px;
+    font-size: 20px;
+}
+.textfield input{
+
+    position: relative;
+    left: 45px;
+}
+form .textfield1{
+    position: relative;
+    margin:30px 0;
+}
+
+.textfield1 input{
+    
+    width: 50%;
+    height: 40px;
+    padding-left: 10px;
+}
+.textfield1 p{
+    position: relative;
+    top:50%;
+    left:5px;
+    font-size: 20px;
+}
+.textfield1 input{
+
+    position: relative;
+    left: 30px;
+}
+.pass{
+    margin: -5px 0 20px 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.pass:hover{
+    color: blue;
+    text-decoration: underline;
+}
+.sub{
+    color: white;
+    width: 50%;
+    height: 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color:rgb(66, 66, 218);
+}
+.Submit{
+    padding-left: 170px;
+}
+.signuplink{
+   margin: 30px 0;
+   text-align: center;
+   font-size:18px ;
+}
+.signuplink a{
+    text-decoration: none;
+}
+.signuplink a:hover{
+    text-decoration: underline;
+}

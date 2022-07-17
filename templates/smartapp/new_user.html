@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="{% static 'css/new_user.css' %}">
+    <script src="{% static 'js/new_user.js' %}"></script>
+</head>
+
+<body>
+    <div class="regForm">
+        {% if error_msg %}
+        <h2>{{error_msg}}</h2>
+        {% endif %}
+        <h1>New Student Registration</h1>
+        <form action="http://localhost:8000/smartapp/signup/"  name="regdForm" onsubmit="validateForm()" method="post">
+            {% csrf_token %}
+            <div class="name">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" class="name1" autocomplete="off">
+            </div>
+            <div class="regdNo">
+                <label for="regdNo">Regd No:</label>
+                <input type="number" name="regdNo" id="regdNo" class="registration" autocomplete="off"
+                    oninput="javascript: if (this.value.length > this.maxLength)this.value = this.value.slice(0, this.maxLength);"
+                    maxlength="10" [min]="0">
+            </div>
+            <div class="phoneno">
+                <label for="phone">Phone No:</label>
+                <input type="number" name="phone" id="phoneNo" class="phoneNo" autocomplete="off"
+                    oninput="javascript: if (this.value.length > this.maxLength)this.value = this.value.slice(0, this.maxLength);"
+                    maxlength="10" [min]="0">
+            </div>
+            <div class="mail">
+                <label for="email">Email Id :</label>
+                <input type="text" name="email" class="eMail" id="eMail" autocomplete="off">
+            </div>
+            <div class="pass">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" class="password" autocomplete="off">
+            </div>
+            <div class="cpass">
+                <label for="cPassword">Confirm password:</label>
+                <input type="password" name="cPassword" id="cPassword" class="cPassword" autocomplete="off">
+            </div>
+            <div class="btn">
+                <input type="reset" class="res" name="button" value="Reset">
+                <button class="sub" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+<div style="border: 2px solid black ; background-color: antiquewhite;">
+</div>

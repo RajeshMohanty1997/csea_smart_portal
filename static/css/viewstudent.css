@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#menu div{
+    display:inline-block;
+    padding-left: 27%;
+    padding-top: 2%;
+    
+}
+#menu button{
+    color: black;
+    background-color: white;
+    border: none;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-size: 2vw;
+    cursor: pointer;
+
+}
+#menu button:hover{
+    background-color: orange;
+    color: white;
+    border-radius: 5px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+table tr{
+    height: 40px;
+}
+table th{
+    font-size:2vw;
+    background-color: orange;
+    color: white;
+}
+table tr td{
+    text-align: center;
+}
+
+table tr td button{
+    color: white;
+    background-color: orange;
+    border: 1px solid black;
+    font-size: 1vw;
+    padding:5px 5px;
+    cursor: pointer;
+}

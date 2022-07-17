@@ -1,0 +1,78 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+body{
+    font-family: sans-serif;
+    background-color: white;
+}
+.verification{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+.verification h1{
+    padding-top: 20px;
+    padding-left: 20px;
+    border-bottom: 1px;
+    font-size: 24px;
+}
+
+.verification form{
+    padding:0 20px;
+    box-sizing: border-box;
+
+}
+
+form .textfield{
+    position: relative;
+    margin:30px 0;
+    padding-left: 5px;
+    
+}
+.textfield h2{
+    position: relative;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.textfield input{
+    
+    width: 10%;
+    height: 30px;
+    padding-left: 10px;
+}
+
+
+
+
+.sub{
+    color: white;
+    width: 30%;
+    height: 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color:rgb(66, 66, 218);
+    
+}
+.btn{
+    padding-left: 210px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.resendlink{
+    margin: 20px 0;
+    font-size:18px ;
+    padding-left: 3px;
+ }
+ .resendlink a{
+     text-decoration: none;
+ }
+ .resendlink a:hover{
+     text-decoration: underline;
+ }

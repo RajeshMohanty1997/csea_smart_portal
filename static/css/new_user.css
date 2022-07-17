@@ -1,0 +1,70 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+body{
+    font-family: sans-serif;
+    background-color: white;
+}
+.regForm{
+    position: absolute;
+    top: 49%;
+    left:47%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+.regForm h1{
+    text-align: center;
+    padding: 30px 0 30px 0;
+    border-bottom: 1px;
+}
+.regForm form{
+    padding: 0 40px;
+    box-sizing: border-box;
+
+}
+.name1,.registration,.phoneNo,.eMail,.password,.cPassword{
+    position: relative;
+    left:200px;
+    top:-29px;
+    border-radius: 5px;
+    line-height: 30px;
+    padding: 0 22px;
+    font-size: 18px;
+
+}
+.name,.regdNo,.mail,.phoneno,.pass,.cpass{
+    margin-left: 5px;
+    margin-top: -2px;
+    width: 125px;
+    padding: 0 22px;
+    font-size: 20px;
+}
+#terms
+{
+    margin-left: -30px;
+    margin-top: -2px;
+    width: 130px;
+
+}
+.res,.sub{
+    color: white;
+    width: 30%;
+    height: 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color:rgb(66, 66, 218);
+    
+}
+.btn{
+    padding-left: 140px;
+    padding-bottom: 30px;
+}
+
+
+.formerror {
+    color: red;
+}

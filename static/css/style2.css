@@ -1,0 +1,66 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+body{
+    font-family: sans-serif;
+    background-color: white;
+}
+.forgotpassword{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+.forgotpassword h1{
+    text-align: center;
+    padding: 30px 0 10px 0;
+    border-bottom: 1px;
+    font-size: bold;
+}
+.forgotpassword form{
+    padding: 0 30px;
+    box-sizing: border-box;
+
+}
+
+form .textfield{
+    position: relative;
+    margin:30px 0;
+    padding-left: 80px;
+    
+}
+.textfield p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 24px;
+}
+
+.textfield input{
+    
+    width: 80%;
+    height: 30px;
+    padding-left: 10px;
+}
+
+
+
+
+.sub{
+    color: white;
+    width: 30%;
+    height: 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color:rgb(66, 66, 218);
+    
+}
+.btn{
+    padding-left: 210px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}

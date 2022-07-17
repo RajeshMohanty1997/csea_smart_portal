@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="{% static 'css/user_login.css' %}">
+    <script src="{% static 'css/user_login.js' %}"></script>
+</head>
+
+<body>
+   <!-- <div class="header">
+        <div class="headerimage headsection"><img src="{% static 'images/igitsaranglogo.png' %}" alt="igitlogo"></div>
+        <div class="headertext headsection">
+            <p>Indira Gandhi Institute of Technology,Sarang</p>
+            <p>CSEA Department</p>
+        </div>
+    </div>-->
+    <div class="container">
+        <h1>Student Login</h1>
+        <form action="http://localhost:8000/smartapp/login-validate/" method="post" onsubmit="return validateForm()">
+            {% csrf_token %}
+            <div class="textfield">
+                <label for="regdNo">Registration No</label>
+                <input type="number" name="regdNo" id="regdNo" class="registration" autocomplete="off" placeholder="Enter Registration Number"
+                    oninput="javascript: if (this.value.length > this.maxLength)this.value = this.value.slice(0, this.maxLength);"
+                    maxlength="10" [min]="0" >
+            </div>
+
+            <div class="textfield1">
+                <label for="password">Password</label>
+                <input type="password" name="password" placeholder="Enter Password" class="inputbox" id="password"
+                    autocomplete="off">
+            </div>
+
+            <!-- redirect to Forgot Password Page -->
+            <div class="Forgotpassword">
+                <a href="http://localhost:8000/smartapp/forgotpassword/"> Forgot Password?</a>
+            </div>
+
+            <!-- redirect to Welcome Page After successfully Validate the user Inputs -->
+            <div class="Submit">
+                <button class="sub"  type="submit">Login</button>
+            </div>
+
+            <!-- redirect to Registration Page -->
+            <div class="signuplink">
+                Not a member?<a href="http://localhost:8000/smartapp/new-user/">Register</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

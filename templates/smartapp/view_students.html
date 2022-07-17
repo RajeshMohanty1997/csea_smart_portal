@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/viewstudent.css' %}">
+    <title>View Students</title>
+</head>
+
+<body>
+    <div id="menu">
+        <div><a href="http://localhost:8000/smartapp/view-students/"><button>View Students</button></a></div>
+        <div><a href="http://localhost:8000/smartapp/new-student/"><button>New Student</button></a></div>
+    </div>
+    <div>
+        <table border="1" cellspacing="0" cellpadding="5">
+            <tr>
+                <th>RegdNo</th>
+                <th>Name</th>
+                <th>RollNo</th>
+                <th>Branch</th>
+                <th>Department</th>
+                <th>DOB</th>
+                <th>E-mail</th>
+                <th>Phone</th>
+                <th>PIN</th>
+                <th>District</th>
+                <th>State</th>
+            </tr>
+            {% for std in students %}
+            <tr>
+                <td>{{std.regdNo}}</td>
+                <td>{{std.name}}</td>
+                <td>{{std.rollNo}}</td>
+                <td>{{std.branch}}</td>
+                <td>{{std.dept}}</td>
+                <td>{{std.dob}}</td>
+                <td>{{std.eMail}}</td>
+                <td>{{std.phone}}</td>
+                <td>{{std.pin}}</td>
+                <td>{{std.district}}</td>
+                <td>{{std.state}}</td>
+                <td><a
+                        href="http://localhost:8000/smartapp/update-student/?regdNo={{std.regdNo}}"><button>Edit</button></a>
+                </td>
+                <td><a
+                        href="http://localhost:8000/smartapp/delete-student/?regdNo={{std.regdNo}}"><button>Delete</button></a>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+
+</html>

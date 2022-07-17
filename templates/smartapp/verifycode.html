@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>verifyotp</title>
+    <link rel="stylesheet" href="{% static 'css/style3.css' %}">
+    <script src="{% static 'js/verifycode.js' %}"></script>
+</head>
+
+<body>
+    <div class="verification">
+        <h1>Verification required</h1>
+        <form action="https://localhost:8000/smartapp/resetpassword/" method="post" onsubmit="validateForm()">
+            <p>To continue,complete this verificationstep.
+                We've sent an OTP to the email.Please enter
+                it below to complete verification.
+            </p>
+            <div class="textfield">
+                <h2>Enter OTP </h2>
+
+                <input type="number" name="OTP" id="OTP" class="OTP" autocomplete="off"
+                    oninput="javascript: if (this.value.length > this.maxLength)this.value = this.value.slice(0, this.maxLength);"
+                    maxlength="4" [min]="0">
+            </div>
+            <div class="resendlink">
+                <p>Didn't get the otp? <a href="#" class="otp">Resend</a></p>
+            </div>
+            <div class="btn">
+                <button class="sub" type="submit">Verify</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>

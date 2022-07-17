@@ -1,0 +1,98 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+body{
+    font-family: sans-serif;
+    background-color: white;
+}
+.reset{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+.reset h1{
+    padding-top: 20px;
+    padding-left: 30px;
+    border-bottom: 1px;
+    font-size: 24px;
+}
+
+.reset form{
+    padding:0 30px;
+    box-sizing: border-box;
+
+}
+
+form .textfield1{
+    position: relative;
+    margin:30px 0;
+    padding-left: 5px;
+    
+}
+form .textfield1{
+    position: relative;
+    margin:30px 0;
+    padding-left: 5px;
+    
+}
+.textfield p{
+    position: relative;
+    padding-top: 10px;
+    font-size: 20px;
+}
+.textfield1 p{
+    position: relative;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+
+.textfield input{
+    
+    width: 50%;
+    height: 30px;
+    padding-left: 10px;
+}
+.textfield1 input{
+
+    width: 50%;
+    height: 30px;
+    padding-left: 10px;
+}
+.toggle{
+    background: none;
+    border: none;
+    color: rgb(45, 45, 212);
+    font-weight: 600;
+    position:absolute;
+    right: 18.50rem;
+    top: 5.52rem;
+    z-index: 9;
+
+}
+.fa{
+    font-size: 1.2rem;
+}
+
+
+
+.sub{
+    color: white;
+    width: 50%;
+    height: 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color:rgb(66, 66, 218);
+    
+}
+.btn{
+    padding-left: 180px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}

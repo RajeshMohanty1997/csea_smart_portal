@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'css/newstudent.css' %}">
+        <script src="{% static 'js/new_student.js' %}"></script>
+        <title>New Student</title>
+</head>
+
+<body>
+        <div class="NSR">
+                <div id="menu">
+                        <div><a href="http://localhost:8000/smartapp/view-students"><button>ViewStudents</button></a>
+                        </div>
+                        <div><a href="http://localhost:8000/smartapp/new-student"><button>NewStudents</button></a></div>
+                </div>
+                <div class="newstudent">
+                        <h1>New Student Record</h1>
+                        <form action="http://localhost:8000/smartapp/save-student/" onsubmit="validateForm()"
+                                method="post">
+                                {% csrf_token %}
+                                <div class="regno">
+                                        <label>RedgNo
+                                                <input type="number" name="regdNo" id="regdNo" autocomplete="off"
+                                                        oninput="javascript: if (this.value.length > this.maxLength)this.value = this.value.slice(0, this.maxLength);"
+                                                        maxlength="10" [min]="0"> </label>
+                                </div>
+                                <div class="name">
+                                        <label>Name
+                                                <input type="text" id="name" name="name"></label>
+                                </div>
+                                <div class="rollno">
+                                        <label>RollNo
+                                                <input type="number" name="rollNo" id="rollNo" autocomplete="off"
+                                                        oninput="javascript: if (this.value.length > this.maxLength)this.value = this.value.slice(0, this.maxLength);"
+                                                        maxlength="6" [min]="0"></label>
+                                </div>
+                                <div class="branch">
+                                        <label for="branch">Branch</label>
+                                        <select name="branch" id="branch">
+                                                <option value="MCA">MCA</option>
+                                        </select>
+                                </div>
+                                <div class="dept">
+                                        <label for="dept">Department</label>
+                                        <select name="dept" id="dept">
+                                                <option value="CSEA">CSEA</option>
+                                        </select>
+                                </div>
+                                <div class="dob">
+                                        <label>DOB
+                                                <input type="number" id="dob" name="dob"></label>
+                                </div>
+                                <div class="email">
+                                        <label>E-mail
+                                                <input type="text" id="eMail" name="eMail"></label>
+                                </div>
+                                <div class="phone">
+                                        <label>Phone
+                                                <input type="number" name="phone" id="phone" autocomplete="off"
+                                                        oninput="javascript: if (this.value.length > this.maxLength)this.value = this.value.slice(0, this.maxLength);"
+                                                        maxlength="10" [min]="0"></label>
+                                </div>
+                                <div class="pin">
+                                        <label>Pin
+                                                <input type="number" name="pin" id="pin" autocomplete="off"
+                                                        oninput="javascript: if (this.value.length > this.maxLength)this.value = this.value.slice(0, this.maxLength);"
+                                                        maxlength="6" [min]="0"></label>
+                                </div>
+                                <div class="dist">
+                                        <label>District
+                                                <input type="text" id="district" name="district"></label>
+                                </div>
+                                <div class="state">
+                                        <label>State
+                                                <input type="text" id="state" name="state"></label>
+                                </div>
+                                <div class="btn">
+                                        <input type="submit" id="sub" class="sub" value="Save">
+                                </div>
+
+                        </form>
+                </div>
+        </div>
+</body>
+
+</html>

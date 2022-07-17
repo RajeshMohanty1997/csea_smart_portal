@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>HTML Project</title>
+</head>
+
+<style>
+    .Head .collegeName {
+        float: left;
+        text-align: left;
+    }
+
+    .Head .navTabs {
+        float: right;
+        text-align: right;
+    }
+</style>
+
+<body>
+    <!--Start Header-->
+    <table id="header" class="Head" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#f3971b">
+        <tr>
+            <td>
+                <table border="0" width="100%" cellpadding="15" cellspacing="0">
+                    <tr>
+                        <span class="CollegeName">
+                            <td>
+                                <font face="arial" color="#000000" size="4">
+                                    <span <i class="fa fa-university" aria-hidden="true"></i></span>
+                                    CSEA SMART STUDENT PORTAL
+                                </font>
+                            </td>
+                        </span>
+
+                        <span class="navTabs">
+                            <td>
+                                <a href="#about">
+                                    <font face="arial" color="#ffffff" size="3">About</font>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#ebooks">
+                                    <font face="arial" color="#ffffff" size="3">e-Books</font>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#syllabus">
+                                    <font face="arial" color="#ffffff" size="3">Syllabus</font>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#timetable">
+                                    <font face="arial" color="#ffffff" size="3">Time-Table</font>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#notice">
+                                    <font face="arial" color="#ffffff" size="3">Notice</font>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#t&pInfo">
+                                    <font face="arial" color="#ffffff" size="3">T&P-Info</font>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#result">
+                                    <font face="arial" color="#ffffff" size="3">Results</font>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="http://localhost:8000/smartapp/view-students/">
+                                    <font face="arial" color="#ffffff" size="3">Student_Details</font>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="http://localhost:8000/smartapp/logout/">
+                                    <font face="arial" color="#ffffff" size="3">Logout</font>
+                                </a>
+                            </td>
+                        </span>
+                    </tr>
+                </table>
+            </td>
+
+        </tr>
+
+
+    </table>
+    <!--End Header-->
+
+    <!--Start Home-->
+    <table id="home" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#F2F2F2">
+        <tr>
+            <td>
+                <table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
+                    <tr>
+                        <td align="center" valign="middle">
+                            <h3>
+                                <font face="arial" color="black" size="6">
+                                    IGIT SARANG
+                                </font>
+                            </h3>
+                            <h2>
+                                <font face="arial" color="#f3971b" size="7">
+                                    CSEA Department
+                                </font>
+                            </h2>
+
+                        </td>
+                    </tr>
+                </table>
+            </td>
+
+        </tr>
+
+
+    </table>
+    <!--End Home-->
+
+    <!--Start About-->
+    <table id="about" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#EFEFEF">
+        <tr>
+            <td>
+                <table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
+                    <!-- Heading Start-->
+                    <tr>
+                        <td height="180" align="center" valign="middle" colspan="2">
+                            <font face="arial" color="#f3971b" size="6">
+                                About
+                            </font>
+                            <hr width="70" color="#f3971b">
+
+                        </td>
+                    </tr>
+                    <!--Heading End-->
+                    <tr>
+                        <td width="45%">
+                            <img src="{% static 'images/IGITCSEA.png' %}" alt="IGITCSEA" width="100%">
+                        </td>
+                        <td width="60%">
+                            <font face="arial" color="black" size="4">
+                                <h2>
+                                    Dr. Sasmita Mishra(HOD)
+                                </h2>
+                                Vision of the Department<br /><br />
+                                To become a recognized ethical leader with morale in the state of Odisha and beyond,
+                                offering high-quality educational programmes in computer science and its
+                                applications.<br /><br />
+                                Mission of the Department<br /><br />
+                                To offer a high-quality education in the art and science of computing, as well as to
+                                prepare students for career opportunities in this area requiring a high level of
+                                technical knowledge and skill.<br />
+                                To develop and administer programs which serve the needs of industrial computer
+                                scientists, researchers and computer application specialists for whom the discipline of
+                                computing sciences provides indispensable tools.<br /><br />
+                                Research Activity<br /><br />
+                                The research interests of the faculty members include Fractal Database, Fractals and
+                                Computer Graphics, Evolutionary Neural Networks and Forecasting, Artificial Intelligence
+                                and information Retrieval, Fuzzy Optimization, MIS Data modeling and database design.
+                                Some of the faculty members have completed their Ph. D. work in this deptt.<br /><br />
+                                Project Training & Placement<br /><br />
+                                As part of the requirement of their course, System development Projects of six months
+                                duration by MCA & B.Tech students are carried out in external organisation. Our alumni
+                                have been recruited by a large cross-section of computer industries both in Private and
+                                Govt. Sectors. Many companies like Infosys, L&T Information Technology Limited, BFL
+                                software and TCS have recruited our students through campus selection.
+                            </font>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &nbsp;
+                        </td>
+                    </tr>
+                </table>
+            </td>
+
+        </tr>
+
+
+    </table>
+    <!--End About-->
+
+    <!--Start ebooks-->
+    <table id="ebooks" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#F1EEE9">
+        <tr>
+            <td>
+                <table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
+                    <!-- Heading Start-->
+                    <tr>
+                        <td height="180" align="center" valign="middle" colspan="3">
+                            <font face="arial" color="#f3971b" size="6 ">
+                                e-Books
+                            </font>
+                            <hr width="70" color="#f3971b">
+
+                        </td>
+                    </tr>
+                    <!--Heading End-->
+                    <tr>
+                        <!-- to Add -->
+                        <table
+                            style="width:50%;height: 500px; background-color: #EFEFEF; margin-top: 0%; margin-left: 25%;"
+                            border=" 4px solid dark">
+
+                            <tr>
+                                <th>Subject</th>
+                                <th>Download Links</th>
+                            </tr>
+                            <tr style="text-align: center">
+                                <td>Computer Organisation and Architecture</td>
+                                <td><a
+                                        href="https://drive.google.com/file/d/1-V91_T_QanyShEQiAqoU_n6lnIEBq8mI/view?usp=sharing">
+                                        click here
+                                        to view </a></td>
+                            </tr>
+
+                            <tr style="text-align: center">
+                                <td>Operating System</td>
+                                <td><a
+                                        href="https://drive.google.com/file/d/17HcX-0w4LK04eHCyuCgDO2db43TZrzn8/view?usp=sharing">click
+                                        here
+                                        to view </a></td>
+                            </tr>
+
+                            <tr style="text-align: center">
+                                <td>Data structure</td>
+                                <td><a
+                                        href="https://drive.google.com/file/d/1bckw0rT7zYA5H5YNKIzf5jZs1uhp9HIE/view?usp=sharing">click
+                                        here
+                                        to view </a></td>
+                            </tr>
+
+                            <tr style="text-align: center">
+                                <td>Design and analysis of algorithm</td>
+                                <td><a
+                                        href="https://drive.google.com/file/d/1PxF_3nnNWFGFH5F5i1Fslba69OIHI-Xx/view?usp=sharing">click
+                                        here
+                                        to view </a></td>
+                            </tr>
+                            <tr style="text-align: center">
+                                <td>Database system</td>
+                                <td><a
+                                        href="https://drive.google.com/file/d/1bckw0rT7zYA5H5YNKIzf5jZs1uhp9HIE/view?usp=sharing">
+                                        click here
+                                        to view </a></td>
+                            </tr>
+
+                            <tr style="text-align: center">
+                                <td>Computer Network</td>
+                                <td><a
+                                        href="https://drive.google.com/file/d/1arUfS0opnbzErrHaqCaRIah-dzBG4rUj/view?usp=sharing">
+                                        click here
+                                        to view </a></td>
+                            </tr>
+
+                            <tr style="text-align: center">
+                                <td>Theory of computation</td>
+                                <td><a
+                                        href="https://drive.google.com/file/d/1bckw0rT7zYA5H5YNKIzf5jZs1uhp9HIE/view?usp=sharing">click
+                                        here
+                                        to view</a></td>
+                            </tr>
+
+                            <tr style="text-align: center">
+                                <td>Compiler design</td>
+                                <td><a
+                                        href="https://drive.google.com/file/d/1bckw0rT7zYA5H5YNKIzf5jZs1uhp9HIE/view?usp=sharing">
+                                        click here
+                                        to view </a></td>
+                            </tr>
+                    </tr>
+                    <tr style="text-align: center">
+                        <td>C </td>
+                        <td><a
+                                href="https://drive.google.com/file/d/1DtOLDY_3Gy2PWRVlT9WtXrnBxeWQqihA/view?usp=sharing">
+                                click here
+                                to view </a></td>
+                    </tr>
+
+                    <tr style="text-align: center">
+                        <td> C ++</td>
+                        <td><a
+                                href="https://drive.google.com/file/d/1MysX_DuBgMhF6GK5MUQG_ePhhDGjoCtD/view?usp=sharing">
+                                click here
+                                to view </a></td>
+                    </tr>
+
+                    <tr style="text-align: center">
+                        <td> java</td>
+                        <td><a
+                                href="https://drive.google.com/file/d/1bckw0rT7zYA5H5YNKIzf5jZs1uhp9HIE/view?usp=sharing">click
+                                here
+                                to view</a></td>
+                    </tr>
+
+                    <tr style="text-align: center">
+                        <td>Python</td>
+                        <td><a
+                                href="https://drive.google.com/file/d/1bckw0rT7zYA5H5YNKIzf5jZs1uhp9HIE/view?usp=sharing">
+                                click here
+                                to view </a></td>
+                    </tr>
+
+                </table>
+        </tr>
+        <tr>
+            <td colspan="3">
+                &nbsp;
+            </td>
+        </tr>
+    </table>
+    <!-- End ebooks -->
+
+    <!--Start syllabus-->
+    <table id="syllabus" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#EFEFEF">
+        <tr>
+            <td>
+                <table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
+                    <!-- Heading Start-->
+                    <tr>
+                        <td height="180" align="center" valign="middle" colspan="3">
+                            <font face="arial" color="#f3971b" size="6 ">
+                                Syllabus
+                            </font>
+                            <hr width="70" color="#f3971b">
+
+                        </td>
+                    </tr>
+                    <!--Heading End-->
+                    <tr style="text-align: center">
+
+                        <!-- to add -->
+                        <table border=" 4px solid dark"
+                            style="width:50%; height: 300px;  background-color: #F1EEE9 ;margin-top: 0%; margin-left: 25%">
+
+                            <tr>
+                                <th>COURSE</th>
+                                <th>Download Links</th>
+                            </tr>
+                            <tr style="text-align: center">
+                                <td>MCA </td>
+                                <td><a
+                                        href="https://drive.google.com/file/d/1VTuSRSauC8MuxvdmoZYknh4ZXDsTLE1Q/view?usp=sharing">
+                                        click here
+                                        to view</a></td>
+                            </tr>
+
+                            <tr style="text-align: center">
+                                <td>B.tech </td>
+                                <td><a
+                                        href="https://drive.google.com/file/d/1VTuSRSauC8MuxvdmoZYknh4ZXDsTLE1Q/view?usp=sharing">
+                                        click here
+                                        to view</a></td>
+                            </tr>
+                            <tr style="text-align: center">
+                                <td>M.tech </td>
+                                <td><a
+                                        href="https://drive.google.com/file/d/1VTuSRSauC8MuxvdmoZYknh4ZXDsTLE1Q/view?usp=sharing">
+                                        click here
+                                        to view</a></td>
+                            </tr>
+
+                        </table>
+                    </tr>
+                </table>
+        </tr>
+    </table>
+    <!-- End syllabus -->
+
+    <!--Start Time-Table-->
+    <table id="timetable" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#F1EEE9">
+        <tr>
+            <td>
+                <table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
+                    <!-- Heading Start-->
+                    <tr>
+                        <td height="180" align="center" valign="middle" colspan="3">
+                            <font face="arial" color="#f3971b" size="6 ">
+                                Time-Table
+                            </font>
+                            <hr width="70" color="#f3971b">
+
+                        </td>
+                    </tr>
+                    <!--Heading End-->
+                    <tr style="text-align: center">
+                        <!-- to be added -->
+                        <table
+                            style="width:50%; height: 300px; margin-top: 0%; margin-left: 25%; background-color: #EFEFEF"
+                            border=" 4px solid dark">
+
+                            <tr>
+                                <th>COURSE</th>
+                                <th>Download Links</th>
+                            </tr>
+                            <tr style="text-align: center">
+                                <td>MCA -- 1st sem</td>
+                                <td><a
+                                        href="https://drive.google.com/file/d/1SURDfgyH8FyjI2_AazSq2quVk5dw1x3v/view?usp=sharing">
+                                        click here
+                                        to view</a></td>
+                            </tr>
+
+                            <tr style="text-align: center">
+                                <td>MCA -- 2nd sem</td>
+                                <td><a
+                                        href="https://drive.google.com/file/d/1Fr7Du4etTWTK4V6QX1T9BEw0n1bOZjtW/view?usp=sharing">
+                                        click here
+                                        to view</a></td>
+                            </tr>
+
+                            <tr style="text-align: center">
+                                <td>MCA -- 3rd sem</td>
+                                <td><a
+                                        href="https://drive.google.com/file/d/1GdNm6JwpXJ4gS7GMC-rV6txEHREjEgYc/view?usp=sharing">
+                                        click here
+                                        to view</a></td>
+                            </tr>
+
+                            <tr style="text-align: center">
+                                <td>MCA -- 4th sem</td>
+                                <td><a
+                                        href="https://drive.google.com/file/d/1BZvXGa3Y_MHYGpt3xlM1H7Vhh3zHI6vt/view?usp=sharing">
+                                        click here
+                                        to view</a></td>
+                            </tr>
+
+                        </table>
+                    </tr>
+                </table>
+        </tr>
+    </table>
+    <!-- End Time-Table -->
+
+    </table>
+    <!--Start notice-->
+    <table id="notice" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#EFEFEF">
+        <tr>
+            <td>
+                <table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
+                    <!-- Heading Start-->
+                    <tr>
+                        <td height="180" align="center" valign="middle" colspan="3">
+                            <font face="arial" color="#f3971b" size="6">
+                                Notice
+                            </font>
+                            <hr width="70" color="#f3971b">
+
+                        </td>
+                    </tr>
+                    <!--Heading End-->
+                    <tr>
+                        <!-- to be added -->
+                        <table
+                            style="width:50%; height: 300px; margin-top: 0%;background-color: #F1EEE9 ;margin-left: 25%;"
+                            border=" 4px solid dark">
+
+                            <tr>
+                                <th>Subject</th>
+                                <th>Download Links</th>
+                            </tr>
+                            <tr style="text-align: center">
+                                <td>MCA Semister form fillup </td>
+                                <td><a
+                                        href="https://drive.google.com/file/d/1bckw0rT7zYA5H5YNKIzf5jZs1uhp9HIE/view?usp=sharing">
+                                        click here
+                                        to view</a></td>
+                            </tr>
+
+                            <tr style="text-align: center">
+                                <td>B.tech 3rd sem Formfillup Last Date</td>
+                                <td><a
+                                        href="https://drive.google.com/file/d/1bckw0rT7zYA5H5YNKIzf5jZs1uhp9HIE/view?usp=sharing">
+                                        click here
+                                        to view</a></td>
+                            </tr>
+                            <tr style="text-align: center">
+                                <td>M.tech Time Table </td>
+                                <td><a
+                                        href="https://drive.google.com/file/d/1bckw0rT7zYA5H5YNKIzf5jZs1uhp9HIE/view?usp=sharing">
+                                        click here
+                                        to view</a></td>
+                            </tr>
+
+                        </table>
+                    </tr>
+
+                </table>
+            </td>
+
+        </tr>
+
+
+    </table>
+    <!--End notice-->
+
+    <!--Start t&pInfo-->
+    <table id="t&pInfo" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#F1EEE9">
+        <tr>
+            <td>
+                <table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
+                    <!-- Heading Start-->
+                    <tr>
+                        <td height="180" align="center" valign="middle" colspan="3">
+                            <font face="arial" color="#f3971b" size="6">
+                                T&P-Info
+                            </font>
+                            <hr width="70" color="#f3971b">
+
+                        </td>
+                    </tr>
+                    <!--Heading End-->
+                    <tr>
+                        <!-- to be added -->
+                        <table
+                            style="width:50%; height: 300px; margin-top: 0%;background-color:#EFEFEF ;margin-left: 25%;"
+                            border=" 4px solid dark">
+
+                            <tr>
+                                <th>COURSE</th>
+                                <th>Download Links</th>
+                            </tr>
+                            <tr style="text-align: center">
+                                <td>MCA -- 1st sem</td>0
+                                <td><a
+                                        href="https://drive.google.com/file/d/1bckw0rT7zYA5H5YNKIzf5jZs1uhp9HIE/view?usp=sharing">
+                                        click here
+                                        to view</a></td>
+                            </tr>
+
+                            <tr style="text-align: center">
+                                <td>MCA -- 2nd sem</td>
+                                <td><a
+                                        href="https://drive.google.com/file/d/1bckw0rT7zYA5H5YNKIzf5jZs1uhp9HIE/view?usp=sharing">
+                                        click here
+                                        to view</a></td>
+                            </tr>
+
+                            <tr style="text-align: center">
+                                <td>MCA -- 3rd sem</td>
+                                <td><a
+                                        href="https://drive.google.com/file/d/1bckw0rT7zYA5H5YNKIzf5jZs1uhp9HIE/view?usp=sharing">
+                                        click here
+                                        to view</a></td>
+                            </tr>
+
+                            <tr style="text-align: center">
+                                <td>MCA -- 4th sem</td>
+                                <td><a
+                                        href="https://drive.google.com/file/d/1bckw0rT7zYA5H5YNKIzf5jZs1uhp9HIE/view?usp=sharing">
+                                        click here
+                                        to view</a></td>
+                            </tr>
+
+                        </table>
+
+
+                </table>
+        </tr>
+
+    </table>
+    <!--End pInfo-->
+
+    <!--Start result-->
+    <table id="result" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#E1EEE9">
+        <tr>
+            <td>
+                <table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
+                    <!-- Heading Start-->
+                    <tr>
+                        <td height="180" align="center" valign="middle" colspan="3">
+                            <font face="arial" color="#f3971b" size="6">
+                                Results
+                            </font>
+                            <hr width="70" color="#f3971b">
+
+                        </td>
+                    </tr>
+                    <!--Heading End-->
+                    <tr>
+                        <!-- to be added -->
+                        <table
+                            style="width:50%; height: 300px; margin-top: 0%;background-color: #F1EEE9 ;margin-left: 25%;"
+                            border=" 4px solid dark">
+
+                            <tr>
+                                <th>COURSE</th>
+                                <th>Download Links</th>
+                            </tr>
+                            <tr style="text-align: center">
+                                <td>MCA -- 1st sem</td>
+                                <td><a
+                                        href="https://drive.google.com/file/d/1sjw7bbXAeSNLEsa5ESbf5tVgCeX48erj/view?usp=sharing">
+                                        click here
+                                        to view</a></td>
+                            </tr>
+
+                            <tr style="text-align: center">
+                                <td>MCA -- 2nd sem</td>
+                                <td><a
+                                        href="https://drive.google.com/file/d/1sjw7bbXAeSNLEsa5ESbf5tVgCeX48erj/view?usp=sharing">
+                                        click here
+                                        to view</a></td>
+                            </tr>
+
+                            <tr style="text-align: center">
+                                <td>MCA -- 3rd sem</td>
+                                <td><a
+                                        href="https://drive.google.com/file/d/1sjw7bbXAeSNLEsa5ESbf5tVgCeX48erj/view?usp=sharing">
+                                        click here
+                                        to view</a></td>
+                            </tr>
+
+                            <tr style="text-align: center">
+                                <td>MCA -- 4th sem</td>
+                                <td><a
+                                        href="https://drive.google.com/file/d/1sjw7bbXAeSNLEsa5ESbf5tVgCeX48erj/view?usp=sharing">
+                                        click here
+                                        to view</a></td>
+                            </tr>
+
+                        </table>
+
+
+                </table>
+        </tr>
+
+    </table>
+    <!--End result-->
+
+    <!--Start Footer-->
+    <table id="header" border="1" width="100%" cellpadding="0" cellspacing="0" bgcolor="#15133C">
+        <tr>
+            <td>
+                <table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
+
+                    <tr>
+                        <td width="25%" valign="top">
+                            <font face="arial" color="#f3971b" size="5">
+                                <span class="fa fa-facebook-square" aria-hidden="true"></span>
+                                Facebook
+                            </font>
+
+                        </td>
+                        <td width="25%" valign="top">
+                            <font face="arial" color="#f3971b" size="5">
+                                <span class="fa fa-twitter-square" aria-hidden="true"></span>
+                                Twitter
+                            </font>
+
+                        </td>
+                        <td width="25%" valign="top">
+                            <font face="arial" color="#f3971b" size="5">
+                                <span class="fa fa-instagram" aria-hidden="true"></span>
+                                Instagram
+                            </font>
+
+                        </td>
+                        <td width="25%" valign="top">
+                            <font face="arial" color="#f3971b" size="5">
+                                <span class="fa fa-linkedin-square" aria-hidden="true"></span>
+                                Linkedin
+                            </font>
+
+                        </td>
+                        <td rowspan="2">
+                            <font face="arial" color="#ffffff" size="5">
+                                <span class="fa fa-arrow-circle-up" aria-hidden="true"></span>
+                                <a href="#header">
+                                    <font face="arial" color="#ffffff" size="5">
+                                        Top
+                                    </font>
+
+                                </a>
+                            </font>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="25%" valign="top">
+                            <font face="arial" color="#f3971b" size="5">
+                                <span class="fa fa-youtube-square" aria-hidden="true"></span>
+                                YouTube
+                            </font>
+
+                        </td>
+                        <td width="25%" valign="top">
+                            <font face="arial" color="#f3971b" size="5">
+                                <span class="fa fa-rss-square" aria-hidden="true"></span>
+                                Blog
+                            </font>
+
+                        </td>
+                        <td width="25%" valign="top">
+                            <font face="arial" color="#f3971b" size="5">
+                                <span class="fa fa-envelope-o" aria-hidden="true"></span>
+                                Email
+                            </font>
+
+                        </td>
+                        <td width="25%" valign="top">
+                            <font face="arial" color="#f3971b" size="5">
+                                <span class="fa fa-globe" aria-hidden="true"></span>
+                                Website
+                            </font>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            &nbsp;
+                        </td>
+                    </tr>
+                </table>
+            </td>
+
+        </tr>
+
+
+    </table>
+    <!--End Footer-->
+</body>
+
+</html>
